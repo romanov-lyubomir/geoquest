@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1
+﻿namespace GeoQuest
 {
     partial class Form1
     {
@@ -79,6 +79,7 @@
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -590,12 +591,22 @@
             this.pictureBox50.TabIndex = 41;
             this.pictureBox50.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(554, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(831, 512);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox43);
@@ -759,5 +770,6 @@
         private PictureBox pictureBox48;
         private PictureBox pictureBox49;
         private PictureBox pictureBox50;
+        private Label label2;
     }
 }

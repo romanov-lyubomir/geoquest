@@ -1,7 +1,8 @@
 ﻿using System.Media;
 using System.Drawing;
+using Timer = System.Windows.Forms.Timer;
 
-namespace WinFormsApp1
+namespace GeoQuest
 {
     public partial class Form1 : Form
     {
@@ -22,6 +23,16 @@ namespace WinFormsApp1
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Create a Timer that will tick every 1000ms (1 second) and set the label2 text to the current time in HH:mm:ss format
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += (s, e) =>
+            {
+                label2.Text = DateTime.Now.ToString("HH:mm:ss");
+            };
+            timer.Start();
+
+
             Dictionary<string, string> countries = new Dictionary<string, string>();
             countries.Add("Albania", "AL");
             countries.Add("Andorra", "AD");

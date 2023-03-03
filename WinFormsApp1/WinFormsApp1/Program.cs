@@ -1,4 +1,4 @@
-namespace WinFormsApp1
+namespace GeoQuest
 {
     internal static class Program
     {
